@@ -43,29 +43,31 @@
 * CU-20: Registrar vehículo
 * CU-21: Guardar y recuperar datos
 
-## 3. Escenario Detallado: CU-09: Generar factura
+## 3. Escenario Detallado: CU-07 Crear orden de trabajo
 
-## Caso de uso: Generar factura
+### Caso de Uso: Crear orden de trabajo
 
-* **Actor principal:** Recepcionista
+* **Actor principal:** Recepcionista 
 * **Precondiciones:**
-  * Existe una orden de trabajo (el sistema recibe `orden` para generar la factura).
+  * El usuario ha iniciado sesión.
+  * El cliente y el vehículo están registrados.
+
 * **Flujo principal:**
-  1. La recepcionista selecciona **Generar factura**.
-  2. La interfaz llama a `GestorFacturacion` (`obtenerOGenerarFactura(orden)`).
-  3. `GestorFacturacion` guarda la factura en `DatosSistema`.
-  4. `GestorFacturacion` retorna a la interfaz subtotal, IVA, total y saldo.
-  5. El cliente realiza el pago y la recepcionista registra monto y método (**Registrar pago**, incluido en este caso de uso).
-  6. La interfaz llama a `registrarPago(factura, monto, método)` y `GestorFacturacion` agrega el pago a `DatosSistema`.
-  7. Si la factura queda pagada, el estado pasa a `Lista para entrega`.
+  1. El usuario selecciona la opción *"Crear orden de trabajo"*.
+  2. El sistema solicita buscar al cliente.
+  3. El usuario selecciona el cliente.
+  4. El sistema muestra los vehículos asociados.
+  5. El usuario selecciona el vehículo.
+  6. El usuario ingresa el detalle del problema o servicio solicitado.
+  7. El sistema registra la orden de trabajo.
+  8. El sistema muestra la confirmación de creación.
+
 * **Flujos alternativos:**
-  * **FA-1 (Pago parcial):** En el paso 7, si el pago no cubre el total, el sistema mantiene el saldo pendiente.
-  * **FA-2 (Generar PDF):** Es opcional («extiende»). La recepcionista solicita el PDF, `GeneradorFacturaPdf` ejecuta `generar(factura)`, construye el documento con iText y retorna `FAC-XXX.pdf`. La interfaz abre el comprobante.
-* **Postcondiciones:**
-  * Factura guardada en `DatosSistema`, con el pago registrado.
-  * Pago total: estado `Lista para entrega`.
-  * Pago parcial: saldo pendiente.
-  * Los datos se escriben en archivo en **Guardar y salir** (`ArchivoDatos.guardar`).
+  * **A1:** Si el cliente no existe, el sistema permite registrarlo.
+  * **A2:** Si el vehículo no está registrado, el sistema permite agregarlo antes de crear la orden.
+
+* **Postcondición:**
+  * La orden de trabajo queda almacenada y lista para seguimiento.
 
 
 
