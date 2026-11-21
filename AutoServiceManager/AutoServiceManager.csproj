@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="10.0.14" />
+    <PackageReference Include="PDFsharp-MigraDoc-GDI" Version="6.2.4" />
+    <EmbeddedResource Include="Recursos/logo.png" LogicalName="AutoServiceManager.logo.png" />
+    <EmbeddedResource Include="Persistencia/Esquema.sql" LogicalName="AutoServiceManager.Esquema.sql" />
+    <Compile Remove="Verificacion/**/*.cs" />
+  </ItemGroup>
+
+</Project>
