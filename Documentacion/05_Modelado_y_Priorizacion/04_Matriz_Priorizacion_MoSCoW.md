@@ -28,8 +28,6 @@
 
 ## Acuerdo de negociación
 
-**Fecha:** [completar]
-**Participantes:** [completar]
 
 ### Puntos negociados
 
