@@ -1,9 +1,8 @@
-
 # 01. Visión y Alcance del Sistema
 
-**Nombre de la aplicación:** AutoServiceManager  
-**Asignatura:** Diseño y Programación de Software  
-**Fase:** Ingeniería de Requerimientos  
+**Nombre de la aplicación:** AutoServiceManager\
+**Asignatura:** Diseño y Programación de Software\
+**Fase:** Ingeniería de Requerimientos\
 **Entregable:** 1 - Configuración del Proyecto, Visión y Matriz de Interesados
 
 ## 1. Introducción
@@ -31,7 +30,7 @@ AutoServiceManager estará orientado a la gestión administrativa y operativa de
 
 ### 2.1. Funcionalidades incluidas
 
-Las principales funcionalidades que se propone desarrollar son:
+Las principales funcionalidades que se propone incluir son:
 
 1. **Gestión de clientes:** Registrar y consultar la información de los clientes que solicitan servicios en el taller.
 
@@ -49,9 +48,9 @@ Las principales funcionalidades que se propone desarrollar son:
 
 8. **Facturación y pagos:** Calcular los valores correspondientes a los servicios y repuestos, registrar pagos y generar comprobantes en formato PDF.
 
-9. **Reportes administrativos:** Consultar información general sobre las operaciones del taller para apoyar la toma de decisiones.
+9. **Reportes administrativos:** Permitir al administrador preparar reportes operativos que el propietario pueda revisar.
 
-Estas funcionalidades corresponden al alcance propuesto para el desarrollo del sistema y deberán ser refinadas y validadas durante la fase de Ingeniería de Requerimientos.
+La especificación 1.0 detalla estas funcionalidades. La matriz de trazabilidad registra cuáles están implementadas y qué pruebas las respaldan.
 
 
 ### 2.2. Funcionalidades excluidas (NO alcance)
@@ -81,14 +80,14 @@ El desarrollo de AutoServiceManager estará sujeto a restricciones que delimitan
 
 ### 3.1. Restricciones tecnológicas
 
-- La aplicación se desarrollará utilizando el lenguaje de programación C# y Windows Forms sobre la plataforma .NET.
+- La aplicación se desarrollará utilizando el lenguaje de programación C# y Windows Forms sobre .NET 10.
 - El sistema estará orientado a equipos con sistema operativo Windows.
 - Se utilizará Visual Studio como entorno principal de desarrollo.
 - El código fuente y la documentación serán administrados mediante Git y GitHub.
 
 ### 3.2. Restricciones técnicas
 
-- El sistema utilizará una base de datos local SQLite para almacenar la información del taller, conforme a la tecnología propuesta para el proyecto.
+- La aplicación utiliza SQLite para almacenar localmente la información del taller.
 - La aplicación no dependerá de una conexión permanente a Internet para realizar las operaciones locales.
 - El funcionamiento del sistema estará limitado a los recursos disponibles en el equipo donde se instale.
 
@@ -106,7 +105,7 @@ El desarrollo de AutoServiceManager estará sujeto a restricciones que delimitan
 
 ### 3.5. Restricciones organizacionales
 
-- El desarrollo será realizado de manera colaborativa por los integrantes del equipo.
+- Joel Ordoñez coordina alcance y adquisición. Ronald Veloz mantiene la especificación y la planificación. Pablo Cuasapaz coordina el modelado, la trazabilidad y las pruebas.
 - Las modificaciones del código fuente y la documentación se gestionarán mediante el repositorio compartido de GitHub.
 - Las funcionalidades propuestas deberán responder a las necesidades de los interesados y respetar el alcance definido para la primera versión.
 
@@ -128,7 +127,7 @@ En esta sección se presentan los principales términos utilizados en el context
 | Repuesto | Pieza o componente utilizado durante el mantenimiento o reparación de un vehículo. |
 | Inventario | Registro de los repuestos disponibles y sus respectivas existencias. |
 | Cotización | Estimación del costo de los servicios y repuestos necesarios para realizar un trabajo. |
-| Factura o comprobante | Documento que presenta los valores correspondientes a los servicios y repuestos registrados. |
+| Comprobante de servicio | Documento de cobro que presenta los valores de los servicios y repuestos registrados en una orden. |
 | Pago | Registro de un valor entregado por el cliente para cubrir el costo de los servicios realizados. |
 | Reporte administrativo | Resumen de información sobre las operaciones del taller que permite consultar y analizar su funcionamiento. |
 | Interesado (Stakeholder) | Persona, grupo u organización que utiliza el sistema, tiene interés en él o puede verse afectado por su funcionamiento. |

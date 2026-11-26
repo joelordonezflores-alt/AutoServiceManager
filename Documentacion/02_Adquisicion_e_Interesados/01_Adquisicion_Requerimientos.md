@@ -1,9 +1,8 @@
-
 # 01. Adquisición de Requerimientos
 
-**Aplicación:** AutoServiceManager  
-**Asignatura:** Diseño y Programación de Software  
-**Fase:** Ingeniería de Requerimientos  
+**Aplicación:** AutoServiceManager\
+**Asignatura:** Diseño y Programación de Software\
+**Fase:** Ingeniería de Requerimientos\
 **Entregable:** PPE04 - Adquisición de Requerimientos
 
 **Integrantes:**
@@ -17,9 +16,9 @@ La adquisición de requerimientos constituye una actividad de la Ingeniería de 
 
 En el proyecto AutoServiceManager, este proceso se enfoca en comprender las actividades administrativas y operativas de un taller automotriz, considerando la gestión de clientes, vehículos, citas, órdenes de trabajo, diagnósticos, inventario, facturación y reportes.
 
-Para el presente ejercicio se utilizará una simulación académica de adquisición de requerimientos, basada en escenarios representativos del funcionamiento de un taller automotriz, los interesados identificados en el Entregable 1 y las funcionalidades previstas para AutoServiceManager.
+Para el presente ejercicio se documenta una simulación académica de adquisición de requerimientos, basada en escenarios representativos del funcionamiento de un taller automotriz, los interesados identificados en el Entregable 1 y las funcionalidades previstas para AutoServiceManager.
 
-La información obtenida mediante los escenarios simulados permitirá plantear necesidades iniciales, formular preguntas de aclaración e identificar posibles conflictos entre los interesados.
+Los escenarios simulados permiten plantear necesidades iniciales, formular preguntas de aclaración e identificar posibles conflictos entre los interesados.
 
 ## 2. Propósito del documento
 
@@ -28,62 +27,41 @@ El propósito del presente documento es registrar de manera organizada el proces
 Además, se busca documentar las necesidades detectadas, sus respectivas aclaraciones y los posibles conflictos entre interesados, con el fin de establecer una base para el posterior análisis, refinamiento y especificación de requerimientos del sistema.
 
 
-## 3. Plan de Adquisición
+## 3. Plan de adquisición
 
-El plan de adquisición de requerimientos de AutoServiceManager establece las actividades necesarias para identificar, recopilar y aclarar las necesidades de los interesados relacionados con la gestión de un taller automotriz.
+### 3.1. Técnicas y evidencia
 
-Para este ejercicio académico se combinará la revisión de documentación existente con técnicas de elicitación aplicadas a escenarios simulados. Esto permitirá analizar las necesidades de los diferentes interesados y establecer una base para la posterior especificación de requerimientos.
-
-### 3.1. Técnicas de elicitación
-
-Se contemplan las siguientes técnicas de adquisición:
-
-| Técnica | Descripción | Objetivo |
+| Técnica | Uso documentado | Evidencia y límite |
 |---|---|---|
-| Entrevista simulada | Formulación de preguntas y respuestas hipotéticas desde la perspectiva de los interesados del taller. | Identificar necesidades relacionadas con la administración, atención de clientes y mantenimiento de vehículos. |
-| Observación simulada | Análisis de escenarios representativos de las actividades diarias de un taller automotriz. | Reconocer problemas en el registro de información y seguimiento de los servicios. |
-| Revisión documental | Análisis de los documentos del PPE03 y de la estructura y funcionalidades del proyecto AutoServiceManager. | Identificar información existente y mantener la coherencia entre los entregables. |
-| Lluvia de ideas | Generación y evaluación de propuestas de funcionalidades a partir de los problemas identificados. | Identificar posibles soluciones y necesidades que requieran aclaración. |
+| Entrevista simulada | Formular y responder preguntas desde el rol de atención, taller, inventario, facturación o administración. | §5 conserva 12 preguntas, las respuestas hipotéticas y los registros que aclaran. |
+| Observación simulada | Representar la agenda, recepción, reparación y movimientos de inventario en escenarios de escritorio. | Los resultados se reconstruyen a partir de §4 y §6. No hay una ficha de observación ni constancia de una sesión independiente. |
+| Revisión documental y técnica | Contrastar los escenarios con la visión, los interesados y los módulos existentes. | F-DOC, F-TEC y la mención mixta en INF-15. Las referencias al repositorio identifican el insumo auditable. |
+| Lluvia de ideas | Considerar alternativas a los conflictos y precisar preguntas para el refinamiento. | §6.2 conserva alternativas propuestas. El historial disponible no acredita una reunión de lluvia de ideas ni sus asistentes. |
 
-Las entrevistas y observaciones se desarrollarán como simulaciones académicas, sin representar consultas realizadas a trabajadores de un taller real.
+### 3.2. Fuentes identificadas
 
-### 3.2. Fuentes de información
-
-Las fuentes consideradas para la adquisición de requerimientos son las siguientes:
-
-| Fuente | Tipo | Información esperada |
+| Código | Fuente registrada | Cobertura en la entrega |
 |---|---|---|
-| Propietario del taller (simulado) | Interesado interno | Necesidades de supervisión, control de ingresos y reportes. |
-| Administrador del taller (simulado) | Interesado interno | Gestión de clientes, vehículos, personal y servicios. |
-| Recepcionista (simulado) | Interesado interno | Registro de clientes, programación de citas y recepción de vehículos. |
-| Mecánico (simulado) | Interesado interno | Diagnósticos, órdenes de trabajo y seguimiento de reparaciones. |
-| Encargado de inventario (simulado) | Interesado interno | Control de existencias y utilización de repuestos. |
-| Personal de facturación (simulado) | Interesado interno | Registro de pagos y generación de comprobantes. |
-| Cliente del taller (simulado) | Interesado externo | Información sobre servicios, costos y estado del vehículo. |
-| Documentación PPE03 | Fuente documental | Visión, alcance, restricciones y matriz de interesados. |
-| Proyecto AutoServiceManager | Fuente técnica | Estructura de formularios, módulos y funcionalidades existentes. |
+| S-PRO | Propietario del taller, simulado | Reportes administrativos, INF-14. |
+| S-ADM | Administrador del taller, simulado | Vehículos, órdenes, costos y persistencia, INF-02/05/11/15. |
+| S-REC | Recepcionista, simulada | Clientes y citas, INF-01/03. |
+| S-MEC | Mecánico, simulado | Historial, diagnóstico y avances, INF-04/06/07. |
+| S-INV | Encargado de inventario, simulado | Repuestos, consumo y proveedores, INF-08/09/10. |
+| S-FAC | Personal de facturación, simulado | Pagos y comprobantes, INF-12/13. |
+| S-CLI | Cliente del taller, simulado | Expectativa de reservas y consultas en el conflicto C-04. |
+| F-DOC | [Visión y Alcance](../01_Gestion_y_Alcance/01_Vision_y_Alcance.md) y [Matriz de Interesados](../01_Gestion_y_Alcance/02_Matriz_Interesados.md) | Referencia de roles, alcance y restricciones. Sirve para justificar derivaciones técnicas, con decisión pendiente cuando falte un relato equivalente en los INF. |
+| F-TEC | [Proyecto Windows Forms](../../AutoServiceManager/AutoServiceManager.csproj) y [persistencia](../../AutoServiceManager/Persistencia/BaseDatos.cs), base Git `9d7df43` | Referencia técnica para confirmar la existencia de los módulos y el almacenamiento local. El plan original cita el proyecto como fuente. |
 
-### 3.3. Cronograma de adquisición
+### 3.3. Cronograma por fases y responsables previstos
 
-La adquisición se organiza en cuatro fases para facilitar la recopilación, aclaración y organización de la información.
-
-| Fase | Actividad planificada | Responsable | Resultado esperado |
+| Fase | Actividad | Responsables previstos en el plan | Rastro verificable |
 |---|---|---|---|
-| Fase 1 | Revisar los documentos del PPE03 y las funcionalidades existentes de AutoServiceManager. | Joel Ordoñez | Identificación de fuentes y necesidades iniciales. |
-| Fase 2 | Desarrollar entrevistas simuladas con los diferentes interesados del taller. | Joel Ordoñez y Ronald Veloz | Registro de necesidades y problemas identificados en los escenarios. |
-| Fase 3 | Analizar escenarios de operación del taller mediante observación simulada y lluvia de ideas. | Ronald Veloz y Pablo Cuasapaz | Identificación de necesidades adicionales y situaciones ambiguas. |
-| Fase 4 | Formular preguntas de aclaración, analizar posibles conflictos y organizar la información. | Joel Ordoñez, Ronald Veloz y Pablo Cuasapaz | Consolidación del documento de adquisición de requerimientos. |
+| 1 | Revisar visión, interesados y módulos. | Joel Ordoñez | F-DOC y F-TEC identificados en §3.2. Fecha de ejecución individual pendiente. |
+| 2 | Elaborar escenarios de entrevista simulada. | Joel Ordoñez y Ronald Veloz | Registros de §4 y preguntas de §5. El contenido publicado no atribuye cada respuesta a una sesión. |
+| 3 | Analizar escenarios y formular alternativas. | Ronald Veloz y Pablo Cuasapaz | Conflictos de §6 con hipótesis explícitas. Fecha de sesión pendiente. |
+| 4 | Organizar la adquisición para el refinamiento. | Joel Ordoñez, Ronald Veloz y Pablo Cuasapaz | Git acredita la primera incorporación de este documento el 21/11/2026 en `0b39034`. |
 
-### 3.4. Responsables del proceso
-
-Las responsabilidades propuestas para el desarrollo del ejercicio se distribuyen considerando los roles establecidos previamente en el equipo.
-
-- **Joel Ordoñez (Product Owner y desarrollador):** Coordinar la identificación de necesidades, organizar la información obtenida y verificar su relación con el alcance del sistema.
-- **Ronald Veloz (Scrum Master y desarrollador):** Facilitar la organización de las actividades, participar en la elaboración de escenarios simulados y apoyar la identificación de conflictos.
-- **Pablo Cuasapaz (Desarrollador):** Analizar las funcionalidades técnicas del proyecto, participar en la identificación de necesidades y colaborar en la documentación y revisión de los registros.
-
-Los tres integrantes participarán en la revisión de la información para mantener la coherencia entre las necesidades identificadas y las funcionalidades propuestas para AutoServiceManager.
-
+Joel coordina la revisión de alcance. Ronald facilita el seguimiento y la elaboración de escenarios. Pablo revisa la correspondencia con las funciones existentes. Estas asignaciones vienen del plan. Las fechas y resultados sustentados se recogen en el [registro cronológico de PPE08](../06_Trazabilidad_y_Validacion/03_Control_Versiones_SRS.md#cronología-documentada).
 
 ## 4. Tabla de Información Registrada
 
@@ -91,23 +69,23 @@ La siguiente tabla presenta las necesidades y situaciones identificadas durante 
 
 Las aclaraciones corresponden a respuestas hipotéticas elaboradas para precisar las necesidades del sistema y serán utilizadas como base para el posterior análisis de requerimientos.
 
-| ID | Información obtenida | Fuente | Aclaración / Respuesta |
-|---|---|---|---|
-| INF-01 | Es necesario registrar los datos de identificación y contacto de los clientes. | Recepcionista (simulada) | Se plantea registrar nombre, identificación, teléfono y correo electrónico cuando esté disponible. |
-| INF-02 | Cada vehículo debe estar relacionado con su respectivo propietario. | Administrador (simulado) | Se utilizará la placa como dato de identificación del vehículo y se permitirá asociar varios vehículos a un mismo cliente. |
-| INF-03 | Se requiere organizar las citas para evitar coincidencias en los horarios de atención. | Recepcionista (simulada) | Se propone registrar fecha, hora, cliente, vehículo y servicio solicitado. |
-| INF-04 | El personal necesita consultar el historial de servicios realizados a un vehículo. | Mecánico (simulado) | El historial se consultará a partir de las órdenes de trabajo asociadas con cada vehículo. |
-| INF-05 | Es necesario registrar órdenes de trabajo para controlar las reparaciones. | Administrador (simulado) | Cada orden estará asociada a un vehículo e incluirá los servicios solicitados y su estado. |
-| INF-06 | Los mecánicos necesitan registrar los diagnósticos de los vehículos. | Mecánico (simulado) | Se propone incluir observaciones sobre las fallas detectadas y los trabajos recomendados. |
-| INF-07 | Se requiere actualizar el avance de las reparaciones. | Mecánico (simulado) | Se utilizarán estados como pendiente, en proceso y finalizado para facilitar el seguimiento. |
-| INF-08 | El inventario debe mostrar los repuestos disponibles en el taller. | Encargado de inventario (simulado) | Cada repuesto tendrá un código, descripción, cantidad disponible y precio referencial. |
-| INF-09 | Se necesita registrar la utilización de repuestos durante las reparaciones. | Encargado de inventario (simulado) | La utilización de un repuesto deberá relacionarse con una orden de trabajo y reflejarse en las existencias. |
-| INF-10 | El taller necesita mantener información de sus proveedores de repuestos. | Encargado de inventario (simulado) | Se registrarán datos básicos del proveedor, sin integrar pedidos automáticos externos. |
-| INF-11 | El personal necesita elaborar cotizaciones antes de realizar determinados trabajos. | Administrador (simulado) | La cotización considerará el costo estimado de los servicios y repuestos necesarios. |
-| INF-12 | Es necesario registrar los pagos realizados por los clientes. | Personal de facturación (simulado) | Se almacenará el valor pagado y su relación con el servicio, sin procesar pagos bancarios en línea. |
-| INF-13 | Se requiere generar un comprobante de los valores cobrados. | Personal de facturación (simulado) | Se propone generar comprobantes en PDF, sin incluir autorización tributaria electrónica del SRI. |
-| INF-14 | El propietario necesita consultar información general de las operaciones del taller. | Propietario (simulado) | Se propone consultar reportes sobre servicios, órdenes de trabajo e ingresos registrados. |
-| INF-15 | Es importante disponer de mecanismos para conservar la información del sistema. | Administrador (simulado) y revisión del proyecto | Se contempla el almacenamiento local y la creación de copias de seguridad para reducir el riesgo de pérdida de información. |
+| ID | Información obtenida | Fuente | Aclaración / Respuesta | Rastro de fuente y aclaración |
+|---|---|---|---|---|
+| INF-01 | Es necesario registrar los datos de identificación y contacto de los clientes. | Recepcionista (simulada) | Se plantea registrar nombre, identificación, teléfono y correo electrónico cuando esté disponible. | S-REC / P-01 |
+| INF-02 | Cada vehículo debe estar relacionado con su respectivo propietario. | Administrador (simulado) | Se utilizará la placa como dato de identificación del vehículo y se permitirá asociar varios vehículos a un mismo cliente. | S-ADM / P-02 |
+| INF-03 | Se requiere organizar las citas para evitar coincidencias en los horarios de atención. | Recepcionista (simulada) | Se propone registrar fecha, hora, cliente, vehículo y servicio solicitado. | S-REC / P-03 |
+| INF-04 | El personal necesita consultar el historial de servicios realizados a un vehículo. | Mecánico (simulado) | El historial se consultará a partir de las órdenes de trabajo asociadas con cada vehículo. | S-MEC / P-04 |
+| INF-05 | Es necesario registrar órdenes de trabajo para controlar las reparaciones. | Administrador (simulado) | Cada orden estará asociada a un vehículo e incluirá los servicios solicitados y su estado. | S-ADM / P-04 (historial de órdenes) |
+| INF-06 | Los mecánicos necesitan registrar los diagnósticos de los vehículos. | Mecánico (simulado) | Se propone incluir observaciones sobre las fallas detectadas y los trabajos recomendados. | S-MEC / P-05 |
+| INF-07 | Se requiere actualizar el avance de las reparaciones. | Mecánico (simulado) | Se utilizarán estados como pendiente, en proceso y finalizado para facilitar el seguimiento. | S-MEC / P-06 |
+| INF-08 | El inventario debe mostrar los repuestos disponibles en el taller. | Encargado de inventario (simulado) | Cada repuesto tendrá un código, descripción, cantidad disponible y precio referencial. | S-INV / P-07 |
+| INF-09 | Se necesita registrar la utilización de repuestos durante las reparaciones. | Encargado de inventario (simulado) | La utilización de un repuesto deberá relacionarse con una orden de trabajo y reflejarse en las existencias. | S-INV / P-07 |
+| INF-10 | El taller necesita mantener información de sus proveedores de repuestos. | Encargado de inventario (simulado) | Se registrarán datos básicos del proveedor, sin integrar pedidos automáticos externos. | S-INV / P-08 |
+| INF-11 | El personal necesita elaborar cotizaciones antes de realizar determinados trabajos. | Administrador (simulado) | La cotización considerará el costo estimado de los servicios y repuestos necesarios. | S-ADM / P-09 |
+| INF-12 | Es necesario registrar los pagos realizados por los clientes. | Personal de facturación (simulado) | Se almacenará el valor pagado y su relación con el servicio, sin procesar pagos bancarios en línea. | S-FAC / P-10 |
+| INF-13 | Se requiere generar un comprobante de los valores cobrados. | Personal de facturación (simulado) | Se propone generar comprobantes en PDF, sin incluir autorización tributaria electrónica del SRI. | S-FAC / P-10 |
+| INF-14 | El propietario necesita consultar información general de las operaciones del taller. | Propietario (simulado) | Se propone consultar reportes sobre servicios, órdenes de trabajo e ingresos registrados. | S-PRO / P-11 |
+| INF-15 | Es importante disponer de mecanismos para conservar la información del sistema. | Administrador (simulado) y revisión del proyecto | Se contempla el almacenamiento local y la creación de copias de seguridad para reducir el riesgo de pérdida de información. | S-ADM + F-TEC / P-12 |
 
 Los registros presentados constituyen una primera aproximación a las necesidades del sistema. Su contenido deberá analizarse y refinarse en las siguientes etapas de Ingeniería de Requerimientos.
 
@@ -181,4 +159,4 @@ Se propone realizar reuniones de revisión para comparar las alternativas de sol
 
 Cuando se alcance un acuerdo, el estado correspondiente podrá actualizarse de "Pendiente" a "Resuelto". Si todavía existen diferencias, se registrará como "En negociación".
 
-Las alternativas descritas constituyen propuestas del ejercicio de simulación y no representan acuerdos confirmados con personas reales.
+Las alternativas surgieron de la simulación. La [negociación de PPE07](../05_Modelado_y_Priorizacion/04_Matriz_Priorizacion_MoSCoW.md#negociación-y-planificación) recoge la solución que adopta la especificación para cada conflicto. El estado Pendiente indica que falta la ratificación de los interesados.

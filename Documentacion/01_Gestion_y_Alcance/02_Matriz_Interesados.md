@@ -1,9 +1,8 @@
-
 # 02. Matriz de Interesados
 
-**Nombre de la aplicación:** AutoServiceManager  
-**Asignatura:** Diseño y Programación de Software  
-**Fase:** Ingeniería de Requerimientos  
+**Nombre de la aplicación:** AutoServiceManager\
+**Asignatura:** Diseño y Programación de Software\
+**Fase:** Ingeniería de Requerimientos\
 **Entregable:** 1 - Configuración del Proyecto, Visión y Matriz de Interesados
 
 ## 1. Introducción
@@ -32,7 +31,7 @@ La siguiente matriz identifica a los principales interesados de AutoServiceManag
 
 | Interesado | Clasificación | Interés | Influencia | Necesidad principal | Posibles conflictos |
 |---|---|---|---|---|---|
-| Propietario del taller | Interno / Indirecto | Alto | Alta | Supervisar las operaciones, controlar los ingresos y consultar reportes administrativos. | Puede solicitar reportes detallados que aumenten la complejidad y el tiempo de desarrollo. |
+| Propietario del taller | Interno / Indirecto | Alto | Alta | Supervisar las operaciones y los ingresos mediante reportes preparados por el administrador. | Puede solicitar reportes detallados que aumenten la complejidad y el tiempo de desarrollo. |
 | Administrador del taller | Interno / Directo | Alto | Alta | Gestionar clientes, vehículos, servicios, personal y operaciones generales del taller. | Puede priorizar el control administrativo frente a la rapidez de las operaciones diarias. |
 | Recepcionista | Interno / Directo | Alto | Media | Registrar clientes, vehículos, citas y órdenes de trabajo de manera organizada. | Puede requerir registros sencillos, mientras que la administración solicita información más detallada. |
 | Mecánico | Interno / Directo | Alto | Media | Consultar órdenes de trabajo, registrar diagnósticos y actualizar los avances de los servicios. | Puede considerar excesiva la información que debe registrar durante sus actividades. |
@@ -40,9 +39,9 @@ La siguiente matriz identifica a los principales interesados de AutoServiceManag
 | Personal de facturación | Interno / Directo | Alto | Media | Consultar los valores de los servicios, registrar pagos y generar comprobantes. | Puede necesitar información completa de las órdenes antes de registrar los pagos. |
 | Cliente del taller | Externo / Indirecto | Alto | Baja | Recibir atención organizada, conocer el estado de su vehículo y obtener información clara sobre los costos. | Puede solicitar consultas y reservas en línea que no están contempladas en la primera versión. |
 | Proveedor de repuestos | Externo / Indirecto | Medio | Baja | Mantener un registro organizado de los repuestos suministrados al taller. | Puede solicitar integración automática de pedidos, funcionalidad excluida del alcance inicial. |
-| Equipo de desarrollo | Externo / Directo | Alto | Alta | Comprender los requerimientos y desarrollar una aplicación que cumpla con el alcance establecido. | Las solicitudes adicionales pueden superar el tiempo y los recursos disponibles para el proyecto. |
+| Equipo de desarrollo | Externo / Indirecto | Alto | Alta | Comprender los requerimientos y desarrollar una aplicación que cumpla con el alcance establecido. | Las solicitudes adicionales pueden superar el tiempo y los recursos disponibles para el proyecto. |
 
-Los niveles de interés e influencia representan una clasificación inicial propuesta para el proyecto y podrán ajustarse durante la adquisición y validación de requerimientos.
+La clasificación directa se refiere a la operación del taller. El equipo de desarrollo configura y comprueba el producto durante el proyecto académico. El propietario y el cliente reciben información a través del personal. El acceso de cada rol a las funciones se define en la tabla de permisos de [PPE06](../04_Requerimientos_Verificables/01_Requerimientos_Refinados.md#tabla-de-acceso-por-rol). Los niveles se mantienen como valoración inicial.
 
 
 ## 4. Resolución de Conflictos
